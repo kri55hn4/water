@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Water Reminder Extension",
+  "version": "1.0",
+  "description": "A simple water reminder extension",
+  "permissions": ["notifications", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "water-bottle.png"
+    }
+  },
+  "icons": {
+    "16": "water-bottle.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

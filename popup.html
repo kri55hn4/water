@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Water Reminder</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Stay Hydrated!</h1>
+  <p>Adjust reminder interval:</p>
+  <input type="number" id="intervalInput" min="1" placeholder="Enter interval in minutes">
+  <button onclick="setReminder()">Set Reminder</button>
+  <div id="notificationOptions">
+    <p>Notification options:</p>
+    <label><input type="checkbox" id="visualCheckbox"> Visual (pop-up, badge)</label>
+    <label><input type="checkbox" id="audioCheckbox"> Audio (sound alerts)</label>
+    <label><input type="checkbox" id="customMessageCheckbox"> Custom Message</label>
+    <input type="text" id="customMessageInput" placeholder="Enter custom message">
+	
+		<script src="popup.js"></script>
+    </div>
+</body>
+</html>
+
